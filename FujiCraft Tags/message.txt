@@ -1,0 +1,12 @@
+  this one has a space:
+     order: 1     tag: '&f#b22222C&#d11414h&#f00707e&#f8040cr&#ea0c24r&#dc143cy&f] '
+     description: '#b22222C&#d11414h&#f00707e&#f8040cr&#ea0c24r&#dc143cy'
+     permission: deluxetags.tag.this one has a space
+  this one has no spaces:
+     order: 2     tag: '&f#b22222C&#d11414h&#f00707e&#f8040cr&#ea0c24r&#dc143cy&f] '
+     description: '#b22222C&#d11414h&#f00707e&#f8040cr&#ea0c24r&#dc143cy'
+     permission: deluxetags.tag.this one has no spaces
+  this one intentional space:
+     order: 3     tag: '&f#b22222C&#d11414h&#f00707e&#f8040cr&#ea0c24r&#dc143cy&f] '
+     description: '#b22222C&#d11414h&#f00707e&#f8040cr&#ea0c24r&#dc143cy'
+     permission: deluxetags.tag.this one intentional space
