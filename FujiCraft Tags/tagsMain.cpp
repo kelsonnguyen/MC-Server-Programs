@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <algorithm>
 
 // Header function for user input.
 void tagInput(std::string& givenName, std::string& givenDesc)
@@ -8,8 +9,11 @@ void tagInput(std::string& givenName, std::string& givenDesc)
 	std::cout << "Enter the tag name: ";
 	std::getline(std::cin, givenName);
 	std::cout << "\nNow, enter the tag description: ";
-	std::cin >> givenDesc;
+	std::getline(std::cin, givenDesc);
 
+	// Remove all ampersands.
+	givenDesc.erase(std::remove(givenDesc.begin(), 
+		givenDesc.end(), '&'), givenDesc.end());
 }
 
 int main()
@@ -39,7 +43,7 @@ int main()
 
 		// Write to the txt file.
 		file << "  " << tagName << ":" << std::endl;
-		file << "     order: " << orderNum;
+		file << "     order: " << orderNum << std::endl;
 		file << "     tag: '&f" << tagDesc << "&f] \'" << std::endl;
 		file << "     description: \'" << tagDesc << "\'" << std::endl;
 		file << "     permission: deluxetags.tag." << tagName << std::endl;
